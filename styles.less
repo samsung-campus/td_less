@@ -1,6 +1,18 @@
 
 @mainWidth: 1020px;
 @lightBlue: #C9D0FF;
+@blue: #007BFF;
+
+.rounded-corner {
+    border: 1px solid @blue;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px auto 20px;
+}
+
+.clear {
+    clear:both;
+}
 
 .mainframe {
     width: @mainWidth;
@@ -8,6 +20,7 @@
 }
 
 header {
+    .rounded-corner;
     background: @lightBlue;
 }
 
@@ -24,4 +37,8 @@ header {
 .col-4 {
     width: 4 * (@mainWidth / 6) - 20;
     padding: 10px;
+}
+
+footer {
+    .rounded-corner;
 }
