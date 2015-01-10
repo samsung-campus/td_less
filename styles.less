@@ -3,8 +3,8 @@
 @lightBlue: #C9D0FF;
 @blue: #007BFF;
 
-.rounded-corner {
-    border: 1px solid @blue;
+.rounded-corner(@borderColor) {
+    border: 1px solid @borderColor;
     border-radius: 10px;
     padding: 5px;
     margin: 20px auto 20px;
@@ -20,7 +20,7 @@
 }
 
 header {
-    .rounded-corner;
+    .rounded-corner(@blue);
     background: @lightBlue;
 
     h1 {
@@ -48,5 +48,5 @@ header {
 }
 
 footer {
-    .rounded-corner;
+    .rounded-corner(@lightBlue);
 }
